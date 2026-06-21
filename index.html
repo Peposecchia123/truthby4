@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>truthby4</title>
+
+<style>
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('truthby4.jpg') center center / cover no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 0 32px 0;
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #a8a8a8;
+    opacity: 0;
+
+    animation:
+        fadeIn 2s ease forwards,
+        floatText 6s ease-in-out infinite;
+
+    text-shadow:
+        0 0 2px rgba(255,255,255,0.08),
+        0 0 12px rgba(255,255,255,0.04);
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.links a {
+    color: #7f8a96;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    border: 1px solid rgba(127,138,150,0.45);
+    border-radius: 4px;
+    padding: 12px 24px;
+    transition: all 0.2s ease;
+}
+
+.links a:hover {
+    color: #c5cdd6;
+    border-color: #c5cdd6;
+    transform: translateY(-1px);
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #7a7a7a;
+    opacity: 0.5;
+    letter-spacing: 8px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatText {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>truthby4</h1>
+
+<div class="links">
+
+<a href="https://open.spotify.com/artist/5giQhj5CJy6pu3vovGrRZZ?si=KOl_9qdtSp66gECGB3oa3A" target="_blank">
+spotify
+</a>
+
+<a href="https://music.apple.com/us/artist/truthby4/1882120647" target="_blank">
+apple music
+</a>
+
+<a href="https://www.youtube.com/channel/UCBD1SJwn1Bs6hWx_FKW8y4g" target="_blank">
+youtube
+</a>
+
+<a href="https://www.instagram.com/peposecchia" target="_blank">
+instagram
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+<a href="https://www.youtube.com/watch?v=mScpHTIi-kM" target="_blank">369</a>
+</div>
+
+</body>
+</html>
